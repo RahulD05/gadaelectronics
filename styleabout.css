@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster+Two&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.hero{
+    background-color: lightblue;
+    overflow: hidden;
+}
+.heading h1{
+    font-family: 'Lobster Two', cursive;
+    color: black;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+.hero-content{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+}
+.hero-content h2{
+    font-size: 38px;
+    margin-bottom: 30px;
+    color: white;
+}
+h2::before{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100;
+    background: #202fb4;
+    transition: all .5s;
+}
+h2::after{
+    width: 100%;
+    color: #202fb4;
+    
+}
+.hero-content p{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: black;
+}
+.hero-content button{
+    display: inline-block;
+    color: white;
+    background-color: #202fb4;
+    padding: 9px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.hero-content button:hover{
+    background-color: lightgrey;
+    color: black;
+    transform: scale(1.1);
+}
+.hero-img{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+}
+img{
+    height: 700px;
+    width: 100%;
+    border-radius: 10px;
+}

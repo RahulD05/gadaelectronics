@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster+Two&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0.5rem 1.5rem;
+    
+}
+a, button{
+    color: white;
+   
+}
+
+.imageclickable {
+    margin-right: auto;
+    
+}
+.logo{
+    height: 4.2rem;
+    cursor: pointer;
+    margin-right: auto;
+    
+}
+.nav-links{
+    list-style: none;
+    align-items: center;
+    
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0 1.25rem;
+    
+}
+.nav-links li a{
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    transition: all 0.5s ease 0s;
+    
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #202fb4;
+    transition: all .5s;
+   
+}
+.nav-links li a:hover::after{
+    width: 100%;
+    color: #202fb4;
+    
+}
+button{
+    background: #202fb4;
+    cursor: pointer;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    transition: all 0.5s ease 0s;
+    margin-left: 20px;
+  
+}
+button:hover{
+    background: rgb(125, 190, 212);
+}
+section{
+    display: flex;
+    border: 0.5px solid whitesmoke;
+    height: calc(100vh - 100px);
+    align-items: center;
+    justify-content: center;
+}
+.hero-img{
+    max-width: 670px;
+    height: auto;
+   
+}
+.content-left{
+    width: 30%;
+    
+}
+section h2{
+    font-size: 54px;
+    color: white;
+    text-transform: uppercase;
+    
+}
+section h3{
+    font-size: 25px;
+    color: black;
+    font-weight: 400;
+    word-spacing: 6px;
+    
+}
+.cta{
+    margin-left: auto;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    text-align: end;
+   
+}
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 1rem;
+    font-size: 30px;
+    font-family: 'Lobster Two', cursive;
+    
+}
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
+    gap: 1.5rem;
+    padding: 3rem;
+    border-bottom: 0.5px solid white;
+   
+}
+.features .box-container .box{
+    padding: 3rem;
+    outline: .1rem solid black;
+    outline-offset: -1rem;
+    text-align: center;
+    margin: auto;
+    font-family: 'Libre Baskerville', serif;
+    box-shadow: 0 .5rem 1.5rem #202fb4;
+   
+
+}
+.features .box-container .box .cta{
+    margin-top: 1rem;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid white;
+   
+}
+.testimonial{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    margin: 0;
+    padding: 50px 0;
+    box-sizing: border-box;
+    
+}
+.testimonial .image{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+
+}
+.testimonial .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+   
+}
+.slide p{
+    text-align: center;
+    padding: 0 100px;
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: 'Libre Baskerville', serif;
+    color: black;
+    
+}
+.slide .quote-icon{
+    font-size: 30px;
+    color: #202fb4;
+    
+}
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.details .name{
+    font-size: 14px;
+    font-weight: 600px;
+    color: black;
+    
+}
+.details .company{
+    font-size: 12px;
+    font-weight: 400px;
+    color: black;
+    
+}
+.footer-container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    padding: 50px 0;
+
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #202fb4;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    color: whitesmoke;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: black;
+    padding-left: 8px;
+}
+.footer-col .social-icons a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-top: 1rem;
+    margin: 0 1px 1px 0px;
+    text-align: start;
+    line-height: 2px;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer-col .social-icons a:hover{
+    color: black;
+}
+h6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 8px;
+    padding-bottom: 5px;
+    font-weight: 50;
+}
